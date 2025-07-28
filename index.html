@@ -4,36 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saugat Neupane | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#00f5d4',
-            background: '#0f172a',
-            card: '#1e293b',
-          },
-          animation: {
-            fadeIn: "fadeIn 2s ease-in-out"
-          },
-          keyframes: {
-            fadeIn: {
-              "0%": { opacity: "0" },
-              "100%": { opacity: "1" }
-            }
-          }
-        }
-      }
-    }
-  </script>
+
+  <!-- ✅ Tailwind via Unpkg CDN (more reliable on GitHub Pages) -->
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
   <style>
     html { scroll-behavior: smooth; }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
   </style>
 </head>
-<body class="bg-background text-white font-sans">
-  <!-- Add all the full site content from earlier here -->
-  <h1 class="text-4xl text-center mt-10 text-primary font-bold animate-bounce">🚀 Welcome to Saugat's Portfolio!</h1>
-  <p class="text-center text-gray-300 mt-4">Looks like it's working now 🎉</p>
-</body>
-</html>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 fixed w-full top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-teal-400 text-xl font-bold">Saugat Neupane</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#about" class="hover:text-teal-300">About</a></li>
+        <li><a href="#skills" class="hover:text-teal-300">Skills</a></li>
+        <li><a href="#training" class="hover:text-teal-300">Training</a></li>
+        <li><a href="#experience" class="hover:text-teal-300">Experience</a></li>
+        <li><a href="#education" class="hover:text-teal-300">Education</a></li>
+        <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="pt-36 fade-in">
+
+    <!-- Hero -->
+    <section class="text-center py-20 px-4">
+      <h2 class="text-4xl font-bold text-teal-400 mb-4 animate-bounce">🚀 Linux & DevOps Specialist</h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto">With 3+ years of experience in cloud platforms, containers, virtualization, and automation — I build optimized and secure infrastructure solutions.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-gray-800 rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg">
+      <h2 class="text-3xl text-teal-300 font-semibold mb-4">🙋‍♂️ About Me</h2>
+      <p class="text-gray-300">
+        I’m a hands-on IT professional with a strong foundation in Linux systems, virtualization, networking, and cloud infrastructure. I’ve worked on configuring bare-metal hypervisors, containerized environments, monitoring, and backups — all while supporting customer migrations and automating deployment pipelines.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl text-teal-300 font-semibold mb-6">🛠️ Technical Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-300">
+        <div class="bg-gray-800 p-4 rounded shadow">🐧 Linux, 🪟
