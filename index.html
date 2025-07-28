@@ -14,17 +14,25 @@
             background: '#0f172a',
             card: '#1e293b',
           },
+          animation: {
+            fadeIn: "fadeIn 2s ease-in-out"
+          },
+          keyframes: {
+            fadeIn: {
+              "0%": { opacity: "0" },
+              "100%": { opacity: "1" }
+            }
+          }
         }
       }
     }
   </script>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-background text-white font-sans">
+
   <!-- Navbar -->
   <nav class="bg-card fixed w-full top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -32,6 +40,7 @@
       <ul class="flex space-x-6 text-sm font-medium">
         <li><a href="#about" class="hover:text-primary">About</a></li>
         <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+        <li><a href="#training" class="hover:text-primary">Training</a></li>
         <li><a href="#experience" class="hover:text-primary">Experience</a></li>
         <li><a href="#education" class="hover:text-primary">Education</a></li>
         <li><a href="#contact" class="hover:text-primary">Contact</a></li>
@@ -39,68 +48,8 @@
     </div>
   </nav>
 
-  <main class="pt-24">
-    <!-- Hero Section -->
+  <main class="pt-36 animate-fadeIn">
+
+    <!-- Hero -->
     <section class="text-center py-20 px-4">
-      <h2 class="text-4xl font-bold text-primary mb-4">Linux & DevOps Specialist</h2>
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto">With 3+ years of experience in cloud platforms, containers, virtualization, and automation — I build optimized and secure infrastructure solutions.</p>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="py-16 bg-card rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg">
-      <h2 class="text-3xl text-primary font-semibold mb-4">About Me</h2>
-      <p class="text-gray-300">
-        I'm a hands-on systems engineer with deep knowledge in Linux, virtualization, containers, and monitoring. I enjoy automating infrastructure and delivering reliable cloud environments.
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="py-16 max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl text-primary font-semibold mb-6">Skills</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300">
-        <div class="bg-card p-4 rounded shadow hover:shadow-primary/50">Linux, Windows</div>
-        <div class="bg-card p-4 rounded shadow hover:shadow-primary/50">Docker, Podman</div>
-        <div class="bg-card p-4 rounded shadow hover:shadow-primary/50">VMware, KVM, XCP-NG, Verge.io</div>
-        <div class="bg-card p-4 rounded shadow hover:shadow-primary/50">Apache CloudStack, Jelastic, Azure</div>
-        <div class="bg-card p-4 rounded shadow hover:shadow-primary/50">Zabbix, Backup Systems</div>
-        <div class="bg-card p-4 rounded shadow hover:shadow-primary/50">Python, Bash, HTML, CSS</div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="py-16 bg-card rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg">
-      <h2 class="text-3xl text-primary font-semibold mb-4">Experience</h2>
-      <h3 class="text-xl font-bold mb-2">Senior Assistant (IT), Datahub Pvt. Ltd (Nov 2021 - Present)</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Deployed hypervisors and storage on bare metal servers</li>
-        <li>Automated tasks with scripting</li>
-        <li>Configured monitoring and backup solutions</li>
-        <li>Provided client support & cloud migrations</li>
-        <li>Performed UAT on internal platforms</li>
-      </ul>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="py-16 max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl text-primary font-semibold mb-4">Education</h2>
-      <ul class="text-gray-300 space-y-2">
-        <li><strong>B.Sc. CSIT</strong> – Swastik College (TU) | 2073–2078</li>
-        <li><strong>+2 Science</strong> – Ambition Academy | 2071–2073</li>
-        <li><strong>SLC</strong> – Apex Life School | 2070</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-16 bg-card rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg text-gray-300">
-      <h2 class="text-3xl text-primary font-semibold mb-4">Contact</h2>
-      <p>Email: <a href="mailto:saugatneupane31@gmail.com" class="text-primary">saugatneupane31@gmail.com</a></p>
-      <p>Phone: +977 9860905972</p>
-      <p>Location: Kaushaltar, Bhaktapur</p>
-    </section>
-  </main>
-
-  <footer class="text-center py-6 text-gray-500 border-t border-gray-700 mt-10">
-    &copy; 2025 Saugat Neupane. All rights reserved.
-  </footer>
-</body>
-</html>
+      <h2 c
