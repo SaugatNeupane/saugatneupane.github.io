@@ -4,76 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saugat Neupane | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00f5d4',
+            background: '#0f172a',
+            card: '#1e293b',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Saugat Neupane</h1>
-    <p>Senior Assistant (IT) | Linux | Virtualization | DevOps Enthusiast</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>With 3+ years of hands-on experience in Linux, virtualization, containers, networking, and storage systems, I excel in optimizing technical environments. I'm passionate about building innovative IT solutions and collaborating with cross-functional teams.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Operating Systems: Linux, Windows</li>
-      <li>Containers: Docker, Podman</li>
-      <li>Cloud: Apache CloudStack, Jelastic, Azure</li>
-      <li>Virtualization: VMware, XCP-NG, Verge.io</li>
-      <li>Storage: OpenE, TrueNAS</li>
-      <li>Web Development: HTML, CSS</li>
-      <li>Programming: Python, Bash</li>
-      <li>Backup: Arcserve UDP, Ahsay, Commvault</li>
-      <li>Monitoring: Zabbix</li>
-      <li>Database: MySQL, PostgreSQL, MSSQL</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <h3>Datahub Pvt. Ltd (Nov 2021 – Present)</h3>
-    <ul>
-      <li>Configured and deployed hypervisors: VMware, XenServer, XCP-NG</li>
-      <li>Installed and managed storage systems like TrueNAS and OpenE</li>
-      <li>Automated tasks with Bash/Python scripts</li>
-      <li>Provided technical support and setup backups</li>
-      <li>Configured monitoring and managed UAT for platforms</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Sc. CSIT</strong> – Swastik College (TU), 2073–2078</li>
-      <li><strong>+2 (Science)</strong> – Ambition Academy, 2071–2073</li>
-      <li><strong>SLC</strong> – Apex Life School, 2070</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:saugatneupane31@gmail.com">saugatneupane31@gmail.com</a></p>
-    <p>Phone: +977 9860905972</p>
-    <p>Location: Kaushaltar, Bhaktapur</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Saugat Neupane. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
+<body class="bg-background text-white font-sans">
+  <!-- Navbar -->
+  <nav class="bg-card fixed w-full top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-primary text-xl font-bold">Saugat Neupane</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#about" cl
