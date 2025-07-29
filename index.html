@@ -10,6 +10,7 @@
     html { scroll-behavior: smooth; }
     .pulse-hover:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; }
     .glow:hover { text-shadow: 0 0 8px #00f7ff; transition: all 0.4s ease; }
+    .typed-cursor { display: none !important; }
   </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
@@ -19,11 +20,11 @@
   <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
     <h1 class="text-teal-400 text-xl font-bold glow">Saugat Neupane</h1>
     <ul class="flex space-x-6 text-sm font-medium">
-      <li><a href="#about" class="hover:text-teal-300">About</a></li>
+      <li><a href="#objective" class="hover:text-teal-300">Objective</a></li>
       <li><a href="#skills" class="hover:text-teal-300">Skills</a></li>
-      <li><a href="#projects" class="hover:text-teal-300">Projects</a></li>
       <li><a href="#experience" class="hover:text-teal-300">Experience</a></li>
       <li><a href="#education" class="hover:text-teal-300">Education</a></li>
+      <li><a href="#training" class="hover:text-teal-300">Training</a></li>
       <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
     </ul>
   </div>
@@ -31,86 +32,85 @@
 
 <main class="pt-36">
 
-<!-- Hero with Typewriter -->
+<!-- Hero -->
 <section class="text-center py-20 px-4" data-aos="zoom-in">
   <h2 class="text-4xl font-bold text-teal-400 mb-4 glow">
-    <span id="typewriter-text"></span>
+    🚀 <span id="typewriter-text"></span> 🛠️ Infrastructure Engineer
   </h2>
   <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-    Experienced in Linux, virtualization, cloud, monitoring & automation. I build reliable, scalable infrastructure and support mission-critical systems.
+    DevOps & Infrastructure engineer with hands-on experience in Linux, observability, virtualization, cloud, and automation.
   </p>
+  <div class="mt-6">
+    <a href="assets/Saugat_CV.pdf" download class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded shadow pulse-hover">
+      📄 Download CV
+    </a>
+  </div>
 </section>
 
-<!-- About -->
-<section id="about" class="py-16 bg-gray-800 rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg" data-aos="fade-up">
-  <h2 class="text-3xl text-teal-300 font-semibold mb-4">🙋‍♂️ About Me</h2>
-  <p class="text-gray-300">
-    I'm an engineer with 3+ years of experience in systems and infrastructure. I'm passionate about automating deployments, scaling applications, and ensuring reliability across environments.
+<!-- Objective -->
+<section id="objective" class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-up">
+  <h3 class="text-2xl font-bold text-teal-400 mb-4">🎯 Career Objective</h3>
+  <p class="text-gray-300 leading-relaxed">
+    A competent and motivated DevOps/Infrastructure Engineer with hands-on experience in Linux, virtualization, monitoring tools, and scripting languages. Looking for an organization that provides opportunities for learning and growth while contributing to its success.
   </p>
 </section>
 
 <!-- Skills -->
-<section id="skills" class="py-16 max-w-5xl mx-auto px-6" data-aos="fade-up">
-  <h2 class="text-3xl text-teal-300 font-semibold mb-6">🛠️ Technical Skills</h2>
+<section id="skills" class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+  <h3 class="text-2xl font-bold text-teal-400 mb-6">🛠️ Skills</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-300">
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🐧 Linux, Windows</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">📦 Docker, Podman</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">☁️ CloudStack, Azure</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🖥️ VMware, KVM, XCP-NG</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">📊 Kibana, Metabase</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">📡 Zabbix, NinjaRMM</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🧠 Jira, Monitoring</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">💾 TrueNAS, Open-E</div>
-    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🐍 Python, 💻 Bash</div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-16 max-w-5xl mx-auto px-6" data-aos="fade-up">
-  <h2 class="text-3xl text-teal-300 font-semibold mb-6">💻 Featured Projects</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-300">
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all" data-aos="zoom-in">
-      <div class="text-3xl mb-2">🔧</div>
-      <h3 class="text-xl font-bold mb-1">Infrastructure Monitoring</h3>
-      <p>Built an automated monitoring setup using Zabbix and custom scripts to monitor 100+ VMs and services in real-time.</p>
-    </div>
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="100">
-      <div class="text-3xl mb-2">📡</div>
-      <h3 class="text-xl font-bold mb-1">VM Deployment Automation</h3>
-      <p>Scripted VM provisioning and backups using Python and Bash across hybrid cloud environments with VMware & XCP-NG.</p>
-    </div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🐧 Linux, 🪟 Windows OS</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">📦 Docker, Podman (Containers)</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🖥️ VMware, KVM, XCP-NG, Verge.io</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">☁️ CloudStack, Jelastic, Azure</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">💾 TrueNAS, Open-E (Storage)</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🛢️ MySQL, PostgreSQL, MSSQL</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">📡 Zabbix, 🔧 Ninja RMM</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🛡️ Arcserve UDP, Ahsay, Commvault</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🐍 Python, 💻 Bash Scripting</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🌐 HTML, CSS</div>
+    <div class="bg-gray-800 p-4 rounded shadow pulse-hover">🤝 Communication, 🧠 Teamwork</div>
   </div>
 </section>
 
 <!-- Experience -->
-<section id="experience" class="py-16 max-w-4xl mx-auto px-6" data-aos="fade-right">
-  <h2 class="text-3xl text-teal-300 font-semibold mb-6">💼 Work Experience</h2>
+<section id="experience" class="py-16 px-6 max-w-5xl mx-auto">
+  <h3 class="text-2xl font-bold text-teal-400 mb-6">💼 Work Experience</h3>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-bold mb-2">Application Reliability Engineer – Nepal Mobility Solutions</h3>
-    <p class="text-sm text-gray-400">📅 Mar 2025 – Present</p>
-    <ul class="list-disc list-inside text-gray-300 space-y-2 mt-2">
+  <!-- JumJum Card -->
+  <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8" data-aos="fade-right">
+    <h4 class="text-xl text-teal-300 font-semibold">Nepal Mobility Solutions Pvt. Ltd. (JumJum)</h4>
+    <p class="text-gray-400 italic">Application Reliability Engineer | March 2025 – Present</p>
+    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
       <li>Application support and troubleshooting via internal portal</li>
       <li>Used Jira for ticketing and customer issue tracking</li>
       <li>Analyzed metrics via Metabase and Kibana for system reliability</li>
       <li>Performed root cause analysis and improved fault resilience</li>
+      <li>Worked heavily on Linux systems to optimize performance</li>
     </ul>
   </div>
 
-  <div class="mb-8">
-    <h3 class="text-xl font-bold mb-2">Senior Assistant – Datahub Pvt. Ltd.</h3>
-    <p class="text-sm text-gray-400">📅 Nov 2021 – Mar 2025</p>
-    <ul class="list-disc list-inside text-gray-300 space-y-2 mt-2">
-      <li>Deployed hypervisors: VMware, XCP-NG, Verge.io</li>
-      <li>Configured TrueNAS, Open-E for storage</li>
+  <!-- Datahub Card -->
+  <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-left">
+    <h4 class="text-xl text-teal-300 font-semibold">Datahub Pvt. Ltd.</h4>
+    <p class="text-gray-400 italic">Infrastructure Support Engineer | Jan 2022 – Feb 2025</p>
+    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+      <li>Provisioned and deployed bare-metal hypervisors (VMware, XCP-NG, Verge.io)</li>
+      <li>Installed & configured storage solutions: TrueNAS, Open-E</li>
+      <li>Configured Docker & Podman containers for Dev & Prod workloads</li>
+      <li>Designed Zabbix monitoring for servers, containers, and services</li>
+      <li>Performed User Acceptance Testing (UAT) on internal platforms</li>
       <li>Created automation scripts using Python & Bash</li>
+      <li>Configured & managed backups using Arcserve, Ahsay, and Commvault</li>
+      <li>Provided Linux & Windows support, resolved technical support tickets</li>
+      <li>Assisted cloud migration, VM provisioning, and client infrastructure setup</li>
     </ul>
   </div>
 </section>
 
 <!-- Education -->
-<section id="education" class="py-16 max-w-4xl mx-auto px-6" data-aos="fade-up">
-  <h2 class="text-3xl text-teal-300 font-semibold mb-4">🎓 Education</h2>
+<section id="education" class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+  <h2 class="text-2xl font-bold text-teal-400 mb-6">🎓 Education</h2>
   <ul class="text-gray-300 space-y-2">
     <li><strong>B.Sc. CSIT</strong> – Swastik College (TU Affiliated) | 2073–2078</li>
     <li><strong>+2 Science</strong> – Ambition Academy | 2071–2073</li>
@@ -118,8 +118,14 @@
   </ul>
 </section>
 
+<!-- Training -->
+<section id="training" class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+  <h3 class="text-2xl font-bold text-teal-400 mb-6">📚 Trainings & Certifications</h3>
+  <p class="text-gray-300">✔️ Completed Cisco Certified Network Associate (CCNA) training.</p>
+</section>
+
 <!-- Contact -->
-<section id="contact" class="py-16 bg-gray-800 rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg text-gray-300" data-aos="zoom-in">
+<section id="contact" class="py-16 bg-gray-800 rounded-lg max-w-4xl mx-auto px-6 my-10 shadow-lg text-gray-300" data-aos="fade-up">
   <h2 class="text-3xl text-teal-300 font-semibold mb-4">📬 Contact</h2>
   <p>📧 Personal: <a href="mailto:saugatneupane31@gmail.com" class="text-teal-400">saugatneupane31@gmail.com</a></p>
   <p>📧 Work: <a href="mailto:saugat.neupane@jumjum.com" class="text-teal-400">saugat.neupane@jumjum.com</a></p>
@@ -139,8 +145,9 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
   AOS.init({ duration: 1000, once: true });
+
   new Typed("#typewriter-text", {
-    strings: ["🚀 DevOps &amp; 🔧 Infrastructure Engineer"],
+    strings: ["DevOps &"],
     typeSpeed: 50,
     backSpeed: 20,
     loop: false,
